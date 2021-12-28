@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF880408-F658-43C2-9770-5A7BEA9D10B1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>EazyLern.PersonManagementSystemSulfikkar</RootNamespace>
+    <AssemblyName>EazyLern.PersonManagementSystemSulfikkar</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CityDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CityDelete.Designer.cs">
+      <DependentUpon>CityDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CityEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CityEdit.Designer.cs">
+      <DependentUpon>CityEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CityList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CityList.Designer.cs">
+      <DependentUpon>CityList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\City.cs" />
+    <Compile Include="Components\Country.cs" />
+    <Compile Include="Components\perConnectionString.cs" />
+    <Compile Include="Components\Person.cs" />
+    <Compile Include="Components\PersonDBConnection.cs" />
+    <Compile Include="CountryAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CountryAdd.Designer.cs">
+      <DependentUpon>CountryAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CountryDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CountryDelete.Designer.cs">
+      <DependentUpon>CountryDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CountryEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CountryEdit.Designer.cs">
+      <DependentUpon>CountryEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CountryList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CountryList.Designer.cs">
+      <DependentUpon>CountryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonAdd.Designer.cs">
+      <DependentUpon>PersonAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonExit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonExit.Designer.cs">
+      <DependentUpon>PersonExit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonMenu.Designer.cs">
+      <DependentUpon>PersonMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonDelete.Designer.cs">
+      <DependentUpon>PersonDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonEdit.Designer.cs">
+      <DependentUpon>PersonEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonList.Designer.cs">
+      <DependentUpon>PersonList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CityAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CityAdd.Designer.cs">
+      <DependentUpon>CityAdd.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CityDelete.resx">
+      <DependentUpon>CityDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CityEdit.resx">
+      <DependentUpon>CityEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CityList.resx">
+      <DependentUpon>CityList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountryAdd.resx">
+      <DependentUpon>CountryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountryDelete.resx">
+      <DependentUpon>CountryDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountryEdit.resx">
+      <DependentUpon>CountryEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountryList.resx">
+      <DependentUpon>CountryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonAdd.resx">
+      <DependentUpon>PersonAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonExit.resx">
+      <DependentUpon>PersonExit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonMenu.resx">
+      <DependentUpon>PersonMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CityAdd.resx">
+      <DependentUpon>CityAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonDelete.resx">
+      <DependentUpon>PersonDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonEdit.resx">
+      <DependentUpon>PersonEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonList.resx">
+      <DependentUpon>PersonList.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
