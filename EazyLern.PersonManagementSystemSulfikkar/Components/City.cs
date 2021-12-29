@@ -5,7 +5,7 @@
 // prohibited without the prior written consent of the copyright owner.
 //
 // Filename        : City.cs
-// Purpose         : To define City entity
+// Purpose         : To define City entity 12
 // Creation Date   : 12-10-2021
 // Author          : Sulfikkar E S
 //
